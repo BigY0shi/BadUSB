@@ -23,6 +23,17 @@
      \__\/       \__\/                   \__\/       \__\/       \__\/                 \__\/       \__\/       \__\/       \__\/       \__\/       \__\/                
                                                                                                                                                                         
 
+
+
+
+
+
+
+
+
+
+
+
 Welcome to Hexmod's Digital Mercenary Payload Reposity, where corporate security theater meets its digital demise. This repository houses HexMod's collection of BadUSB payloads—weaponized keystroke injection scripts designed to liberate data from corporate overlords and expose the fragility of their silicon fortresses.
 
 Remember, Operatives: These tools expose the fundamental weaknesses in corporate security architecture. Use them to strengthen organizational defenses, not to compromise them. The digital revolution requires both technical excellence and ethical responsibility.
