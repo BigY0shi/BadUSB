@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-<title>HEXMOD STUDIOS - BADUsb Repository</title>
-<style>
-div.container {
-background-color: #ffffff;
-}
-div.container p {
-font-family: Arial;
-font-size: 14px;
-font-style: normal;
-font-weight: bold;
-text-decoration: none;
-text-transform: none;
-color: #000000;
-background-color: #ffffff;
-}
-</style>
+HEXMOD STUDIOS - BadUSB Repository
 
-<div class="container">
-<p>Welcome to Hexmod's Digital Mercenary Payload Repository, where corporate security theater meets its digital demise.
+
+Welcome to Hexmod's Digital Mercenary Payload Repository, where corporate security theater meets its digital demise.
 This repository houses HexMod's collection of BadUSB payloads—weaponized keystroke injection scripts designed to liberate data from corporate overlords and expose the fragility of their silicon fortresses.
 
 
@@ -48,9 +32,4 @@ All payloads follow HexMod combat standards—modular design with configurable p
 Warning: These tools are designed for authorized penetration testing and security research only. HexMod Studios assumes absolutely no responsibility for unauthorized deployment against any civilian or corporate targets—though we won't shed tears for fallen megacorps.
 
 
-<i>The revolution will be digitized. Jack in,  warriors.</i>
-
-/p>
-<p></p>
-<p></p>
-</div>
+The revolution will be digitized. Jack in,  warriors.
