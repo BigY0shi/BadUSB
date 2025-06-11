@@ -1,7 +1,36 @@
-HexMod Studios BadUSB Arsenal
-Digital Mercenary Payload Repository
 
-Welcome to the underground armory where corporate security theater meets its digital demise. This repository houses HexMod's collection of BadUSB payloads—weaponized keystroke injection scripts designed to liberate data from corporate overlords and expose the fragility of their silicon fortresses.
+      ___         ___         ___         ___         ___        _____                  ___                 ___        _____                  ___         ___           
+     /__/\       /  /\       /__/|       /__/\       /  /\      /  /::\                /  /\        ___    /__/\      /  /::\     ___        /  /\       /  /\          
+     \  \:\     /  /:/_     |  |:|      |  |::\     /  /::\    /  /:/\:\              /  /:/_      /  /\   \  \:\    /  /:/\:\   /  /\      /  /::\     /  /:/_         
+      \__\:\   /  /:/ /\    |  |:|      |  |:|:\   /  /:/\:\  /  /:/  \:\            /  /:/ /\    /  /:/    \  \:\  /  /:/  \:\ /  /:/     /  /:/\:\   /  /:/ /\        
+  ___ /  /::\ /  /:/ /:/_ __|__|:|    __|__|:|\:\ /  /:/  \:\/__/:/ \__\:|          /  /:/ /::\  /  /:/ ___  \  \:\/__/:/ \__\:/__/::\    /  /:/  \:\ /  /:/ /::\       
+ /__/\  /:/\:/__/:/ /:/ //__/::::\___/__/::::| \:/__/:/ \__\:\  \:\ /  /:/         /__/:/ /:/\:\/  /::\/__/\  \__\:\  \:\ /  /:\__\/\:\__/__/:/ \__\:/__/:/ /:/\:\      
+ \  \:\/:/__\\  \:\/:/ /:/  ~\~~\::::\  \:\~~\__\\  \:\ /  /:/\  \:\  /:/          \  \:\/:/~/:/__/:/\:\  \:\ /  /:/\  \:\  /:/   \  \:\/\  \:\ /  /:\  \:\/:/~/:/      
+  \  \::/     \  \::/ /:/    |~~|:|~~ \  \:\      \  \:\  /:/  \  \:\/:/            \  \::/ /:/\__\/  \:\  \:\  /:/  \  \:\/:/     \__\::/\  \:\  /:/ \  \::/ /:/       
+   \  \:\      \  \:\/:/     |  |:|    \  \:\      \  \:\/:/    \  \::/              \__\/ /:/      \  \:\  \:\/:/    \  \::/      /__/:/  \  \:\/:/   \__\/ /:/        
+    \  \:\      \  \::/      |  |:|     \  \:\      \  \::/      \__\/                 /__/:/        \__\/\  \::/      \__\/       \__\/    \  \::/      /__/:/         
+     \__\/       \__\/       |__|/       \__\/       \__\/                             \__\/               \__\/                             \__\/       \__\/          
+                  ___        _____        ___         ___                               ___         ___         ___         ___         ___         ___                 
+     _____       /  /\      /  /::\      /__/\       /  /\       _____                 /  /\       /  /\       /  /\       /  /\       /__/\       /  /\                
+    /  /::\     /  /::\    /  /:/\:\     \  \:\     /  /:/_     /  /::\               /  /::\     /  /::\     /  /:/_     /  /:/_      \  \:\     /  /::\               
+   /  /:/\:\   /  /:/\:\  /  /:/  \:\     \  \:\   /  /:/ /\   /  /:/\:\             /  /:/\:\   /  /:/\:\   /  /:/ /\   /  /:/ /\      \  \:\   /  /:/\:\  ___     ___ 
+  /  /:/~/::\ /  /:/~/::\/__/:/ \__\:|___  \  \:\ /  /:/ /::\ /  /:/~/::\           /  /:/~/::\ /  /:/~/:/  /  /:/ /::\ /  /:/ /:/_ _____\__\:\ /  /:/~/::\/__/\   /  /\
+ /__/:/ /:/\:/__/:/ /:/\:\  \:\ /  /:/__/\  \__\:/__/:/ /:/\:/__/:/ /:/\:|         /__/:/ /:/\:/__/:/ /:/__/__/:/ /:/\:/__/:/ /:/ //__/::::::::/__/:/ /:/\:\  \:\ /  /:/
+ \  \:\/:/~/:\  \:\/:/__\/\  \:\  /:/\  \:\ /  /:\  \:\/:/~/:\  \:\/:/~/:/         \  \:\/:/__\\  \:\/:::::\  \:\/:/~/:\  \:\/:/ /:\  \:\~~\~~\\  \:\/:/__\/\  \:\  /:/ 
+  \  \::/ /:/ \  \::/      \  \:\/:/  \  \:\  /:/ \  \::/ /:/ \  \::/ /:/           \  \::/     \  \::/~~~~ \  \::/ /:/ \  \::/ /:/ \  \:\  ~~~ \  \::/      \  \:\/:/  
+   \  \:\/:/   \  \:\       \  \::/    \  \:\/:/   \__\/ /:/   \  \:\/:/             \  \:\      \  \:\      \__\/ /:/   \  \:\/:/   \  \:\      \  \:\       \  \::/   
+    \  \::/     \  \:\       \__\/      \  \::/      /__/:/     \  \::/               \  \:\      \  \:\       /__/:/     \  \::/     \  \:\      \  \:\       \__\/    
+     \__\/       \__\/                   \__\/       \__\/       \__\/                 \__\/       \__\/       \__\/       \__\/       \__\/       \__\/                
+                                                                                                                                                                        
+
+Welcome to Hexmod's Digital Mercenary Payload Reposity, where corporate security theater meets its digital demise. This repository houses HexMod's collection of BadUSB payloads—weaponized keystroke injection scripts designed to liberate data from corporate overlords and expose the fragility of their silicon fortresses.
+
+Remember, Operatives: These tools expose the fundamental weaknesses in corporate security architecture. Use them to strengthen organizational defenses, not to compromise them. The digital revolution requires both technical excellence and ethical responsibility.
+-Obtain explicit written authorization before deploying any payload
+-Document all activities for authorized penetration testing reports
+-Follow responsible disclosure practices for discovered vulnerabilities
+-Respect data privacy and confidentiality requirements
+
 
 What's Inside the Chrome Vault
 Our payload arsenal includes everything from stealth reconnaissance tools to full-scale network infiltration protocols. Each script is forged in the fires of anti-corporate rebellion, tested against real-world megacorp defenses, and optimized for maximum operational impact with minimal detection footprint.
